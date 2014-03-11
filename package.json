@@ -1,0 +1,12 @@
+{
+  "name": "lenta",
+  "version": "0.1.0",
+  "description": "Horizontal view gallery",
+  "author": "",
+  "license": "BSD",
+  "dependencies": {
+    "grunt": "0.4.0rc5",
+    "grunt-contrib-requirejs": "0.3.4",
+    "grunt-contrib-clean": "~0.4.0a"
+  }
+}

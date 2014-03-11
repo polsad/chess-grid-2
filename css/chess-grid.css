@@ -1,0 +1,54 @@
+html, body {width: 100%; height: 100%; background: #f1f1f1; margin: 0; padding: 0;}
+
+.chess-grid {max-width: 1000px; background: #ccc; margin: 0 auto; position: relative; width: 100%; height: 100%;}
+	.chess-grid-item {background: #ccc; overflow: hidden; position: absolute;}
+	.chess-grid-item:after {clear: both;}	
+	.chess-grid-item.text-left .chess-grid-image:before {
+		left: 0%;
+		top: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba(194, 225, 245, 0);
+		border-left-color: #fff;
+		border-width: 18px;
+		margin-top: -18px;
+	}
+	.chess-grid-item.text-right .chess-grid-image:before {
+		right: 0%;
+		top: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba(194, 225, 245, 0);
+		border-right-color: #fff;
+		border-width: 18px;
+		margin-top: -18px;
+	}	
+
+	
+	.chess-grid-text {background: #fff; height: 100%; position: relative;}
+	.chess-grid-image {background: #666; height: 100%; width: auto; position: relative; overflow:hidden;}
+
+	.chess-grid-image img.w  {max-width: 100%} 
+	.chess-grid-image img.h {max-height: 100%}
+
+	
+	.chess-grid-item.text-left {} 
+		.chess-grid-item.text-left .chess-grid-text {float: left;}
+	
+	.chess-grid-item.text-right {} 
+		.chess-grid-item.text-right .chess-grid-text {float: right;}
+
+	.chess-grid-item.text-hover {position: relative;} 
+		.chess-grid-item.text-hover .chess-grid-text {float: none; position: absolute; width: 100%; height: 100%; top: 0; opacity: 0;}
+		.chess-grid-item.text-hover:hover .chess-grid-text {opacity: 1;}
+		.chess-grid-item.text-hover .chess-grid-image {width: 100%; height: 100%;}		
+	
+.chess-grid:after, .chess-grid-item:after {clear: both; overflow: hidden; height: 0;}	
