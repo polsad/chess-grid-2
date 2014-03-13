@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 			    	
 			    	name: 'chess-grid',
 			    	
-			    	out: 'dist/chess-grid.min.js',
+			    	out: 'dist/chess-grid.js',
 			    	
 			    	exclude: ['backbone', 'underscore', 'jquery']
 				}

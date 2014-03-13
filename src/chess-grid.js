@@ -63,7 +63,7 @@ define([
 				var type = $(this).data('type');
 				var index = $(this).index() + 1;
 				var result = {};
-				$(this).attr('id', index)
+
 				switch (type) {
 					case '2x1':
 						sw = 2;
